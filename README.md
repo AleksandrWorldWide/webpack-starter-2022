@@ -26,6 +26,13 @@ loaderes:
 load images, fonts:
 	type: 'asset/resource'
 
+minimize html:
+	HtmlWebpackPlugin({
+			minify: {
+				collapseWhitespace: isProd
+			}
+		})
+
 minimize css:
 	"css-minimizer-webpack-plugin"
 	"mini-css-extract-plugin"
